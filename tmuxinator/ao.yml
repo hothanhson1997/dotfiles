@@ -1,0 +1,11 @@
+name: ao
+pre_window: nvm use
+
+windows:
+  - mobile-bash: (cd ~/Workspace/ao/mobile && git fetch --all && git status) && cd ~/Workspace/ao/mobile
+  - api-bash: (cd ~/Workspace/ao/api && git fetch --all && git status) && cd ~/Workspace/ao/api
+  - server:
+      layout: tiled
+      panes:
+        - mobile-server: cd ~/Workspace/ao/mobile && npm run ios
+        - api-server: cd ~/Workspace/ao/api && npm run start

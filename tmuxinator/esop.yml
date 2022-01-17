@@ -1,14 +1,13 @@
 name: esop
-root: ~/Workspace/esop/web
 pre_window: nvm use
 
 windows:
-  - web-bash: git fetch --all && git status
-  - api-bash: (cd ~/Workspace/esop/api && git fetch --all && git status)
+  - web-bash: (cd ~/Workspace/esop/web && git fetch --all && git status) && cd ~/Workspace/esop/web
+  - api-bash: (cd ~/Workspace/esop/api && git fetch --all && git status) && cd ~/Workspace/esop/api
   - server:
       layout: tiled
       panes:
-        - web-server: npm run start
-        - web-lint: npm run lint:watch
-        - api-server: (cd ~/Workspace/esop/api && npm run start)
-        - api-lint: (cd ~/Workspace/esop/api && npm run lint:watch)
+        - web-server: cd ~/Workspace/esop/web && npm run start
+        - web-lint: cd ~/Workspace/esop/web && npm run lint:watch
+        - api-server: cd ~/Workspace/esop/api && npm run start
+        - api-lint: cd ~/Workspace/esop/api && npm run lint:watch
