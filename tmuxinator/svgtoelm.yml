@@ -1,0 +1,9 @@
+name: svgtoelm
+pre_window: nvm use
+
+windows:
+  - web-bash: (cd ~/Workspace/elm/svg-to-elm && git fetch --all && git status) && cd ~/Workspace/elm/svg-to-elm
+  - server:
+      layout: tiled
+      panes:
+        - web-server: cd ~/Workspace/elm/svg-to-elm && code . && npm run start
