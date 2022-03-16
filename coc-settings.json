@@ -25,6 +25,8 @@
     }
   },
   "codeLens.enable": true,
-  "snippets.ultisnips.directories": ["/Users/iker/Workspace/dotfiles/snippets"],
+  "snippets.ultisnips.directories": [
+    "/Users/thanhson/Workspace/dotfiles/snippets"
+  ],
   "javascript.suggestionActions.enabled": false
 }

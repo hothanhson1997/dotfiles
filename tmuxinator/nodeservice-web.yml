@@ -1,8 +1,8 @@
-name: svgtoelm
-root: ~/Workspace/elm/svg-to-elm
+name: nodeservice-web
+root: ~/Workspace/nodeservice/web
 pre_window: nvm use
 
 windows:
-  - editor: nvim
+  - editor: nvm use 14 && nvim
   - bash: git fetch --all && git status
   - server: npm run start
