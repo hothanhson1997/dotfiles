@@ -4,6 +4,8 @@
     "javascript",
     "json",
     "fsharp",
+    "rust",
+    "sql",
     "typescript",
     "typescriptreact"
   ],
@@ -28,5 +30,6 @@
   "snippets.ultisnips.directories": [
     "/Users/thanhson/Workspace/dotfiles/snippets"
   ],
-  "javascript.suggestionActions.enabled": false
+  "javascript.suggestionActions.enabled": false,
+  "sql.database": "postgresql"
 }

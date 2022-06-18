@@ -1,0 +1,7 @@
+name: faq-admin
+root: ~/Workspace/faq/admin
+
+windows:
+  - editor: nvim
+  - bash: git fetch --all && git status
+  - server: npm run start

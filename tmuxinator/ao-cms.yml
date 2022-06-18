@@ -1,0 +1,11 @@
+name: ao-cms
+pre_window: nvm use
+
+windows:
+  - cms-bash: (cd ~/Workspace/ao/cms && git fetch --all && git status) && cd ~/Workspace/ao/cms
+  - api-bash: (cd ~/Workspace/ao/api && git fetch --all && git status) && cd ~/Workspace/ao/api
+  - server:
+      layout: tiled
+      panes:
+        - cms-server: cd ~/Workspace/ao/cms && npm run start
+        - api-server: cd ~/Workspace/ao/api && npm run start
